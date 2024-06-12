@@ -1,5 +1,5 @@
 <?php
-include_once ('pages/car.php');
+include_once ('./model/car.php');
 
 echo "<p>Welcome to the home page!</p>";
 ?>
