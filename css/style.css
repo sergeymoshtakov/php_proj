@@ -49,3 +49,15 @@
     background-color: purple;
     color: #fff;
 }
+
+.car-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.car-item{
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+}
