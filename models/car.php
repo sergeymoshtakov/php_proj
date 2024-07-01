@@ -19,4 +19,9 @@ class Car
                 <button onclick='bookCar()'>Book</button>
             </div>";
     }
+
+    public static function getAllCars($pdo) {
+        $stmt = $pdo->query('SELECT * FROM cars');
+        return $stmt->fetchAll(PDO::FETCH_CLASS, 'Car');
+    }
 }
